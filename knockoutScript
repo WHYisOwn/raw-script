@@ -1,7 +1,7 @@
 --[[
 https://pastebin.com/raw/z7V2yZyF
 ]]
-print("Script made by KAKOYTO_LOXX")
+print("Script made by gagghigggg")
 print("v2.32")
 
 if not game:IsLoaded() then game.Loaded:Wait() end
@@ -375,7 +375,7 @@ TextLabel.BackgroundTransparency = 0.500
 TextLabel.Position = UDim2.new(-4.97028942e-08, 0, -0.131355926, 0)
 TextLabel.Size = UDim2.new(1.00000012, 0, 0.105932206, 0)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Script made by KAKOYTO_LOXX"
+TextLabel.Text = "Script made by gagghigggg"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -1528,7 +1528,7 @@ Script.BorderSizePixel = 0
 Script.Position = UDim2.new(0, 0, 0.110169493, 0)
 Script.Size = UDim2.new(1, 0, 0.101694912, 0)
 Script.Font = Enum.Font.SourceSans
-Script.Text = "https://pastebin.com/raw/Xs5K29Cw"
+Script.Text = "Got Ban"
 Script.TextColor3 = Color3.fromRGB(0, 0, 0)
 Script.TextScaled = true
 Script.TextSize = 14.000
@@ -2172,7 +2172,7 @@ function plrst()
                     elseif v.StatsFolder.Level.Value>plr.StatsFolder.Level.Value then
                         newg.t.BackgroundColor3 = Color3.fromRGB(255,0,0)
                     end
-                    if v.Name == "KAKOYTO_LOXX" or v.Name == "111_ssss" then
+                    if v.Name == "gagghigggg" or v.Name == "bartek110092" then
                         newg.t.Text = "Script Creator\n"..newplrv.." "..v.Name.."\nLvl: "..v.StatsFolder.Level.Value.."\nXp: "..v.StatsFolder.Experience.Value.."/"..v.StatsFolder.Level.Value*25 .."\nDamage: "..v.StatsFolder.Level.Value*5
                     end
                 end
