@@ -11,7 +11,14 @@ Tab:AddToggle({
     Name = "AutoFarm",
     Default = false,
     Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/WHYisOwn/raw-script/main/Blade%20god%20Re'))()
+        --made By WhY for Jason
+
+while true do
+  wait()
+  for i = 1, 45 do
+    game:GetService("Players").LocalPlayer.Character.Sword8.Handle.Script.RemoteEvent:FireServer()
+  end
+end
     end
 })
 
@@ -26,7 +33,7 @@ TabP:AddTextbox({
     Default = "",
     TextDisappear = true,
     Callback = function(txt)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(txt)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(txt) or 16
     end
 })
 
@@ -35,7 +42,7 @@ TabP:AddTextbox({
     Default = "",
     TextDisappear = true,
     Callback = function(txt)
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(txt)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(txt) or 50
     end
 })
 
