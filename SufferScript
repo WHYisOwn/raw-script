@@ -2,6 +2,7 @@ local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 local window = DrRayLibrary:Load("Blades World", "Default")
 
 local autoFarmEnabled = false
+_G.H = true
 
 local mainTab = DrRayLibrary.newTab("Main", "string")
 
@@ -41,6 +42,22 @@ missionsTab.newToggle("AutoJump", "Toggle! (prints the state)", false, function(
     while toggleState do
         wait()
         game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    end
+end)
+
+missionsTab.newToggle("AutoGetOrbs", "Toggle! (prints the state)", true, function(toggleState)
+    if toggleState then
+        while _G.H do
+    wait()
+    local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+    for _, orb in ipairs(workspace.activeOrbs:GetChildren()) do
+        if orb:FindFirstChild("Core") then
+            rootPart.CFrame = orb.Core.CFrame
+        end
+    end
+end
+    else
+        _G.H = false
     end
 end)
 
